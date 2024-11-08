@@ -39,7 +39,7 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 |---|---|---|
 |202201690|FREDERICO GARCEZ RODRIGUES|[<usuario_github>](https://github.com/<usuario_github>)|
 |202201693|HUGO MORENO I VEIGA JARDIM|[<usuario_github>](https://github.com/<usuario_github>)|
-|202105042|KELVIN DE OLIVEIRA|[<usuario_github>](https://github.com/<usuario_github>)|
+|202105042|KELVIN DE OLIVEIRA|[Kelvin-de-Oliveira](https://github.com/Kelvin-de-Oliveira)|
 |202201718|VITOR PAULO ETERNO GODOI|[akzvitor](https://github.com/akzvitor)|
 |202405056|WENDEL MÁRCIO DE OLIVEIRA FILHO|[Wendel-Fl](https://github.com/Wendel-Fl)|
 
@@ -47,17 +47,21 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 
 ### Requisitos Funcionais
 
-1. RF001 - Informar os sintomas e casos de suspeita de dengue.
+1. RF001 - População geral poder informar os sintomas e casos de suspeita de dengue. 
 
-2. RF002 - Receber dicas de prevenção, além de orientações.
+2. RF002 - Receber dicas de prevenção, além de orientações. 
+ 
+3. RF003 - Autoridades da saúde publica confirmar e reportar casos diagnosticados de dengue. 
 
-3. RF003 - Confirmar e reportar casos diagnosticados de dengue.
+4. RF004 - Visualização em tempo real da incidência dos casos de dengue. 
 
-4. RF004 - Visualização em tempo real da incidência dos casos de dengue.
+5. RF005 - Ferramentas de análise para identificar tendências e áreas de risco.  
 
-5. RF005 - Ferramentas de análise para identificar tendências e áreas de risco.
+6. RF006 - Relatórios e alertas automáticos.  
 
-6. RF006 - Relatórios e alertas automáticos.
+7. RF007 - Acesso Diferenciado para Profissionais de Saúde a Informações Sensíveis sobre possíveis casos de dengue.
+
+8. RF008 - Acesso à população geral a Informações sobre Sintomas da Dengue.
 
 ### Requisitos Não Funcionais
 
@@ -102,13 +106,13 @@ O nosso planejamento inicial é hospedar a aplicação back-end no [Heroku](http
 |Iteração|Descrição|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
 |1|Concepção|30/08/2024|13/09/2024|Grupo|Concluída|
-|2|Preparação|14/09/2024|27/09/2024|Grupo|Programada|
-|3|Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024|Grupo|Programada|
-|4|Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024|Grupo|Programada|
-|5|Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024|Grupo|Programada|
-|6|Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024|Grupo|Programada|
-|7|Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024|Grupo|Programada|
-|8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
+|2|Preparação|14/09/2024|27/09/2024|Grupo|Conluída|
+|3|Design e Planejamento Inicial, definição diagrama de classes, interações, etc |28/09/2024|08/11/2024|Grupo|Parcialmente Concluída|
+|4|Implementação RF001 e RF002|09/11/2024|20/11/2024|Grupo|Programada|
+|5|Implementação de RF003 e RF004|09/11/2024|20/11/2024|Grupo|Programada|
+|6|Melhorias e validação RF001, RF002, RF003 e RF004 |21/11/2024|01/12/2024|Grupo|Programada|
+|7|Implementação  e validação de RF005 e RF006 |02/12/2024|11/12/2024|Grupo|Programada|
+|8|Apresentação do Projeto|12/12/2024|20/12/2024|Grupo|Programada|
 
 ### Iterações x Atividades
 |Iteração|Tarefa|Data Início|Data Fim|Responsável|Situação|
