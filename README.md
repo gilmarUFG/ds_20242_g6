@@ -59,10 +59,6 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 
 6. RF006 - Relatórios e alertas automáticos.  
 
-7. RF007 - Acesso Diferenciado para Profissionais de Saúde a Informações Sensíveis sobre possíveis casos de dengue.
-
-8. RF008 - Acesso à população geral a Informações sobre Sintomas da Dengue.
-
 ### Requisitos Não Funcionais
 
 1. RNF001 - Usabilidade
