@@ -92,10 +92,10 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 <Apresentar uma descrição sucinta do modelo de interfaces gráficas do Produto.>
 
 ### Tecnologia de Persistência de Dados
-<Apresentar uma descrição sucinta do modelo de persistência do Produto.>
+Primeiramente iremos usar `PostgreSQL`, mas também testaremos a possibilidade de usar bancos _NoSQL_ como `MongoDB`.
 
 ### Local do _Deploy_
-O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Firebase do Google, sendo crucial para nossa escolha a facilidade de configuração e também os recursos ofertados na versão gratuita.
+O nosso planejamento inicial é hospedar a aplicação back-end no [Heroku](https://www.heroku.com/) e a aplicação front-end na [Versel](https://vercel.com/), sendo crucial para nossa escolha a facilidade de configuração e também os recursos ofertados na versão gratuita. Apesar da escolha, também analisaremos a possibilidade de usar a `AWS`.
 
 ### Cronograma de Desenvolvimento
 
