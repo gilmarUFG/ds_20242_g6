@@ -106,8 +106,8 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |Iteração|Descrição|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
 |1|Concepção|30/08/2024|13/09/2024|Grupo|Concluída|
-|2|Preparação|14/09/2024|27/09/2024|Grupo|Programada|
-|3|Design e Planejamento Inicial, definição diagrama de classes, interações, etc |28/09/2024|08/11/2024|Grupo|Programada|
+|2|Preparação|14/09/2024|27/09/2024|Grupo|Conluída|
+|3|Design e Planejamento Inicial, definição diagrama de classes, interações, etc |28/09/2024|08/11/2024|Grupo|Parcialmente Concluída|
 |4|Implementação RF001 e RF002|09/11/2024|20/11/2024|Grupo|Programada|
 |5|Implementação de RF003 e RF004|09/11/2024|20/11/2024|Grupo|Programada|
 |6|Melhorias e validação RF001, RF002, RF003 e RF004 |21/11/2024|01/12/2024|Grupo|Programada|
