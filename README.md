@@ -107,12 +107,12 @@ O nosso planejamento inicial é hospedar nossa aplicação no Heroku ou no Fireb
 |---|---|---|---|---|---|
 |1|Concepção|30/08/2024|13/09/2024|Grupo|Concluída|
 |2|Preparação|14/09/2024|27/09/2024|Grupo|Programada|
-|3|Design e Planejamento Inicial, definição diagrama de classes, interações, etc |28/09/2024|11/10/2024|Grupo|Programada|
-|4|Implementação RF001 e RF002|12/10/2024|25/10/2024|Grupo|Programada|
-|5|Melhorias e validação RF0001 e RF002, implementação RF008, iniciar implementação RF003|26/10/2024|08/11/2024|Grupo|Programada|
-|6|Melhorias e validação RF008 e RF003, iniciar implementação RF004, RF005 e RF006|09/11/2024|22/11/2024|Grupo|Programada|
-|7|Melhorias e validação RF004, RF005 e RF006 e implementação RF007|23/11/2024|06/12/2024|Grupo|Programada|
-|8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
+|3|Design e Planejamento Inicial, definição diagrama de classes, interações, etc |28/09/2024|08/11/2024|Grupo|Programada|
+|4|Implementação RF001 e RF002|09/11/2024|20/11/2024|Grupo|Programada|
+|5|Implementação de RF003 e RF004|09/11/2024|20/11/2024|Grupo|Programada|
+|6|Melhorias e validação RF001, RF002, RF003 e RF004 |21/11/2024|01/12/2024|Grupo|Programada|
+|7|Implementação  e validação de RF005 e RF006 |02/12/2024|11/12/2024|Grupo|Programada|
+|8|Apresentação do Projeto|12/12/2024|20/12/2024|Grupo|Programada|
 
 ### Iterações x Atividades
 |Iteração|Tarefa|Data Início|Data Fim|Responsável|Situação|
