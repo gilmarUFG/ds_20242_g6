@@ -1,0 +1,12 @@
+@startuml
+start
+:Receber alertas e notificações em \ncasos urgentes de incidência de \ndengue;
+:Acessar dados sobre \nincidência da dengue \nem tempo real;
+:Analisar relatórios e gráficos \npara identificar áreas de risco;
+if (Área de risco identificada?) then (sim)
+    :Tomar decisões estratégicas \ncom base nas análises;
+else (não)
+    :Continuar monitoramento;
+endif
+stop
+@enduml
