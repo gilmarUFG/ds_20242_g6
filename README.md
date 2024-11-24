@@ -2,10 +2,10 @@
 Repositório definido para a manutenção do controle de versão dos artefatos do projeto de do Grupo 6, da Disciplina de Domínios de Software, no semestre 2024-2.
 
 ### Nome do Projeto:
-Informar o nome do projeto
+InfoDengue
 
 ### Descrição:
-O sistema proposto busca melhorar a coleta e análise de dados sobre a dengue, fornecer um canal de comunicação e orientação para a população e contribuir significativamente para o controle e combate à doença.
+O sistema proposto busca melhorar a coleta e análise de dados sobre a dengue, servindo como um canal de comunicação e orientação para a população, por meio da disponibilização de informações atualizadas para prevenir e combater a doença, além contribuir significativamente para o controle e combate da dengue, com a emissão de relatórios e dados úteis para profissionais e autoridades de saúde.
 
 ### Problema
 - *Falta de Informação e Conscientização:*
@@ -37,8 +37,8 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 
 |Matrícula|Nome|Usuário Git|
 |---|---|---|
-|202201690|FREDERICO GARCEZ RODRIGUES|[<usuario_github>](https://github.com/<usuario_github>)|
-|202201693|HUGO MORENO I VEIGA JARDIM|[<usuario_github>](https://github.com/<usuario_github>)|
+|202201690|FREDERICO GARCEZ RODRIGUES|[Frederico03](https://github.com/Frederico03)|
+|202201693|HUGO MORENO I VEIGA JARDIM|[hugojardim](https://github.com/hugojardim)|
 |202105042|KELVIN DE OLIVEIRA|[Kelvin-de-Oliveira](https://github.com/Kelvin-de-Oliveira)|
 |202201718|VITOR PAULO ETERNO GODOI|[akzvitor](https://github.com/akzvitor)|
 |202405056|WENDEL MÁRCIO DE OLIVEIRA FILHO|[Wendel-Fl](https://github.com/Wendel-Fl)|
@@ -47,17 +47,21 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 
 ### Requisitos Funcionais
 
-1. RF001 - População geral poder informar os sintomas e casos de suspeita de dengue. 
+1. RF001 - População geral pode informar os sintomas e casos de suspeita de dengue.
 
-2. RF002 - Receber dicas de prevenção, além de orientações. 
+2. RF002 - População geral recebe orientações e dicas de prevenção à dengue.
+
+3. RF003 - Autoridades de saúde, população e profissionais de saúde podem visualizar em tempo real a incidência dos casos de dengue.
+
+4. RF004 - Autoridades de saúde recebem relatórios e alertas automáticos.
  
-3. RF003 - Autoridades da saúde publica confirmar e reportar casos diagnosticados de dengue. 
+5. RF005 - Profissionais de saúde podem confirmar e reportar casos diagnosticados de dengue.
 
-4. RF004 - Visualização em tempo real da incidência dos casos de dengue. 
+6. RF006 - Profissionais de saúde possuem acesso a informações sensíveis sobre pacientes e a dengue.
 
-5. RF005 - Ferramentas de análise para identificar tendências e áreas de risco.  
+7. RF007 - Autoridades de saúde possuem acesso a ferramentas de análise para identificar tendências e áreas de risco.
 
-6. RF006 - Relatórios e alertas automáticos.  
+8. RF008 - População geral possuem acesso a informações detalhadas sobre a dengue e seus sintomas.
 
 ### Requisitos Não Funcionais
 
