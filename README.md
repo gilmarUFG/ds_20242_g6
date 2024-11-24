@@ -74,26 +74,34 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 3. RNF003 - Conectividade
     - O sistema deve ser capaz de se conectar com outros sistemas externos através de APIs padrão, suportando protocolos como REST, garantindo comunicação em tempo real e troca de informações entre diferentes plataformas.
 
-4. RNF004 - Confiabilidade: <Descrição do Requisito não Funcional>.
+4. RNF004 - Confiabilidade
+    - O sistema deve operar de forma consistente, garantindo que as funcionalidades estejam disponíveis para uso 99,9% do tempo durante horários críticos de monitoramento (7h às 22h).
 
-5. RNF005 - Segurança: <Descrição do Requisito não Funcional>.
+5. RNF005 - Segurança
+    - Todas as tentativas de acesso não autorizado devem ser registradas, e alertas devem ser enviados à administração do sistema.
 
-6. RNF006 - Portabilidade: <Descrição do Requisito não Funcional>.
+6. RNF006 - Portabilidade
+    - O sistema deve permitir a migração de dados para diferentes sistemas de banco de dados relacionais (como SQL Server, PostgreSQL ou MySQL) sem perda de informações, seguindo padrões de interoperabilidade e documentação clara.
 
-7. RNF007 - Desempenho: <Descrição do Requisito não Funcional>.
+7. RNF007 - Desempenho
+    - O tempo de resposta da API deve ser inferior a 2 segundos para 95% das requisições sob carga normal (até 100 requisições simultâneas).
 
 ### Regras de Negócio
-1. RN01 - <Descrição da Regra de Negócio>.
-2. RN02 - <Descrição da Regra de Negócio>.
-3. RN03 - <Descrição da Regra de Negócio>.
-4. RN04 - <Descrição da Regra de Negócio>.
-5. RN05 - <Descrição da Regra de Negócio>.
+1. RN01 - Apenas usuários autenticados podem registrar casos suspeitos de dengue no sistema..
+2. RN02 - Um usuário pode relatar no máximo três casos suspeitos por dia a partir de seu dispositivo..
+3. RN03 - Relatos de sintomas feitos pela população devem ser marcados como "não confirmados" até serem analisados por profissionais de saúde ou confirmados por autoridades.
+4. RN04 - Autoridades de saúde podem acessar dados consolidados sobre casos suspeitos e confirmados, segmentados por região, data e faixa etária.
+5. RN05 - Autoridades devem ser notificadas automaticamente quando o número de casos suspeitos em uma região ultrapassar 50 relatos em um período de 7 dias.
+6. RN06 - Apenas profissionais de saúde vinculados a um posto previamente autorizado podem registrar casos confirmados de dengue.
+7. RN07 - Os profissionais de saúde podem revisar relatos da população e atualizá-los para "sob investigação" caso entrem em contato com o paciente para verificar os sintomas relatados.
+8. RN08 - Caso uma região esteja identificada como "área de surto", profissionais de saúde dessa localidade devem receber alertas prioritários para priorizar atendimentos.
+9. RN09 - Dados pessoais dos usuários devem ser protegidos conforme a LGPD (Lei Geral de Proteção de Dados), garantindo que informações sensíveis sejam acessadas apenas por usuários autorizados.
 
 ### Modelo Arquitetural
-<Apresentar uma descrição sucinta do modelo arquitetural do Produto.>
+O Modelo Arquitetural do sistema será baseado em Microserviços.
 
 ### Modelo de Interfaces Gráficas
-<Apresentar uma descrição sucinta do modelo de interfaces gráficas do Produto.>
+O modelo de Interfaces será realizado por meio de um projeto Figma - <adicionar link do figma>
 
 ### Tecnologia de Persistência de Dados
 Primeiramente iremos usar `PostgreSQL`, mas também testaremos a possibilidade de usar bancos _NoSQL_ como `MongoDB`.
