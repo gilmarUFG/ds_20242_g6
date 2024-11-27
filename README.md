@@ -101,7 +101,7 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 O Modelo Arquitetural do sistema será baseado em Microserviços.
 
 ### Modelo de Interfaces Gráficas
-O modelo de Interfaces será realizado por meio de um projeto Figma - <adicionar link do figma>
+O modelo de Interfaces será realizado por meio de um projeto Figma - [InfoDengue](https://www.figma.com/design/gmeExAkk7vDHjXwUQvQ9pY/InfoDengue?node-id=0-1&t=O3nl1Yg0QdzqHRQA-1)
 
 ### Tecnologia de Persistência de Dados
 Primeiramente iremos usar `PostgreSQL`, mas também testaremos a possibilidade de usar bancos _NoSQL_ como `MongoDB`.
@@ -119,7 +119,7 @@ Design e Planejamento Inicial, definição dos diagramas e Histórias de Usuári
 Histórias de Usuário|28/09/2024|08/10/2024|Grupo|Concluída|
 Construção dos diagramas de classe, sequência, atividades e classes de análise|11/10/2024|11/11/2024|Grupo|Parcialmente concluída|
 Construção do Diagrama C4 Model|20/11/2024|11/12/2024|Grupo|Em andamento|
-Design de interfaces no Figma |20/11/2024|12/12/2024|Grupo|Em andamento|
+Design de interfaces no Figma |27/11/2024|12/12/2024|Grupo|Em andamento|
 Apresentação do Projeto|13/12/2024|13/12/2024|Grupo|Programada|
 
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
