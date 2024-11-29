@@ -5,7 +5,7 @@ Repositório definido para a manutenção do controle de versão dos artefatos d
 InfoDengue
 
 ### Descrição:
-O sistema proposto busca melhorar a coleta e análise de dados sobre a dengue, servindo como um canal de comunicação e orientação para a população, por meio da disponibilização de informações atualizadas para prevenir e combater a doença, além contribuir significativamente para o controle e combate da dengue, com a emissão de relatórios e dados úteis para profissionais e autoridades de saúde.
+O sistema proposto busca melhorar a coleta e análise de dados sobre a dengue, servindo como um canal de comunicação e orientação para a população, por meio da disponibilização de informações atualizadas para prevenir e combater a doença, além contribuir significativamente para o controle e combate da dengue, com a emissão de relatórios e dados úteis para profissionais e autoridades de saúde.
 
 ### Problema
 - *Falta de Informação e Conscientização:*
