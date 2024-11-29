@@ -1,0 +1,18 @@
+@startuml
+actor Usuario_comum
+boundary TelaReporte
+participant "persona : Persona" as Persona
+participant "casoDengue : DengueCase" as DengueCase
+participant "endereco : Address" as Address
+participant "relatorio : Report" as Report
+participant CamadaMapeadora
+
+Usuario_comum -> TelaReporte : 1 Registrar novo caso de dengue
+TelaReporte -> Persona: 2 reportDengueCases()
+Persona -> DengueCase : 3 Criar novo DengueCase
+DengueCase -> Address : 4 Associar endereço ao caso
+DengueCase -> Report : 5 (Opcional) generateReport()
+DengueCase -> CamadaMapeadora : 6 Salvar caso de dengue no banco de dados
+CamadaMapeadora -> DengueCase : 7 Confirmação de salvamento
+Usuario_comum <-- Persona : Confirmação de registro
+@enduml

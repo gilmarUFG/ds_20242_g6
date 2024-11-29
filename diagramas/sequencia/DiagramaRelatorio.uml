@@ -1,0 +1,14 @@
+@startuml
+actor Administrador
+boundary TelaRelatorio
+participant "persona : Persona" as Persona
+participant "relatorio : Report" as Report
+participant CamadaControladora
+
+Administrador -> TelaRelatorio : 1 Solicitar geração de relatório
+TelaRelatorio -> Persona : 2 generateReport()
+Persona -> Report : 3 Criar novo Report
+Report -> CamadaControladora : 4 Levantar dados (camada ira se comunicar com BD para consultas)
+CamadaControladora --> Report : 5 Resultado dos dados de relatório
+Administrador <-- Report : 6 Retorna relatório gerado
+@enduml
