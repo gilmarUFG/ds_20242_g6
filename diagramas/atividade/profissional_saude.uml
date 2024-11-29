@@ -1,0 +1,12 @@
+@startuml
+start
+:Visualiza dados sobre \nos casos de dengue;
+:Cadastra paciente;
+:Registra os resultados da consulta;
+if (Caso de dengue confirmado?) then (sim)
+:Envia dados e localização \ndo caso para autoridades;
+else (não)
+:Dispensa o caso que era \nregistrado como possibilidade;
+endif
+stop
+@enduml 

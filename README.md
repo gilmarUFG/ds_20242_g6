@@ -122,4 +122,8 @@ O nosso planejamento inicial é hospedar a aplicação back-end no [Heroku](http
 |Design de interfaces no Figma |27/11/2024|12/12/2024|Grupo|Em andamento|
 |Apresentação do Projeto|13/12/2024|13/12/2024|Grupo|Programada|
 
+<<<<<<< HEAD
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
+=======
+* Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
+>>>>>>> f07b15a19db8b10ffa859450cddf509cb9eefe05

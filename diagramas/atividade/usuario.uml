@@ -1,0 +1,18 @@
+@startuml
+start
+:Usuário acessa informações sobre a dengue;
+:Usuário reporta sintomas;
+if (Sintomas são suspeitos de dengue?) then (sim)
+fork
+    :Recebe informações para \nalívio dos sintomas;
+fork again
+    :Registra possível caso \nde dengue;
+fork again
+    :Recebe localizações de UBS \nmais próximas;
+end fork 
+else (não)
+    :É informado que é improvável \no diagnóstico de dengue;
+    :Continua a receber dicas, informações \ne detalhes sobre a dengue;
+endif
+stop
+@enduml
