@@ -54,7 +54,7 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 3. RF003 - Autoridades de saúde, população e profissionais de saúde podem visualizar em tempo real a incidência dos casos de dengue.
 
 4. RF004 - Autoridades de saúde recebem relatórios e alertas automáticos.
- 
+
 5. RF005 - Profissionais de saúde podem confirmar e reportar casos diagnosticados de dengue.
 
 6. RF006 - Profissionais de saúde possuem acesso a informações sensíveis sobre pacientes e a dengue.
@@ -101,7 +101,7 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 O Modelo Arquitetural do sistema será baseado em Microserviços.
 
 ### Modelo de Interfaces Gráficas
-O modelo de Interfaces será realizado por meio de um projeto Figma - <adicionar link do figma>
+O modelo de Interfaces será realizado por meio de um projeto Figma - [InfoDengue](https://www.figma.com/design/gmeExAkk7vDHjXwUQvQ9pY/InfoDengue?node-id=0-1&t=O3nl1Yg0QdzqHRQA-1)
 
 ### Tecnologia de Persistência de Dados
 Primeiramente iremos usar `PostgreSQL`, mas também testaremos a possibilidade de usar bancos _NoSQL_ como `MongoDB`.
@@ -111,56 +111,15 @@ O nosso planejamento inicial é hospedar a aplicação back-end no [Heroku](http
 
 ### Cronograma de Desenvolvimento
 
-|Iteração|Descrição|Data Início|Data Fim|Responsável|Situação|
-|---|---|---|---|---|---|
-|1|Concepção|30/08/2024|13/09/2024|Grupo|Concluída|
-|2|Preparação|14/09/2024|27/09/2024|Grupo|Conluída|
-|3|Design e Planejamento Inicial, definição diagrama de classes, interações, etc |28/09/2024|08/11/2024|Grupo|Parcialmente Concluída|
-|4|Implementação RF001 e RF002|09/11/2024|20/11/2024|Grupo|Programada|
-|5|Implementação de RF003 e RF004|09/11/2024|20/11/2024|Grupo|Programada|
-|6|Melhorias e validação RF001, RF002, RF003 e RF004 |21/11/2024|01/12/2024|Grupo|Programada|
-|7|Implementação  e validação de RF005 e RF006 |02/12/2024|11/12/2024|Grupo|Programada|
-|8|Apresentação do Projeto|12/12/2024|20/12/2024|Grupo|Programada|
-
-### Iterações x Atividades
-|Iteração|Tarefa|Data Início|Data Fim|Responsável|Situação|
-|---|---|---|---|---|---|
-|1|Definição do grupo de trabalho|30/08/2024|30/08/2024|Grupo|Concluída|
-|1|Definição do Tema do Trabalho|30/08/2024|13/09/2024|Grupo|Concluída|
-|2|Definição do Backlog do produto|13/09/2024|27/09/2024|Grupo|Programada|
-|2|Descrição dos itens do backlog do produto|14/09/2024|27/09/2024|Grupo|Programada|
-|2|Distribuição dos itens do backlog entre as iterações|14/09/2024|27/09/2024|Grupo|Programada|
-|2|Definição do modelo arquitetural|14/09/2024|27/09/2024|Grupo|Programada|
-|3|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Diagrama de classes dos Item(ns) do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Projeto de persistência dos itens do backlog <x,y,z>|28/09/2024|11/10/2024||Programada|
-|3|Implementação dos itens do backlog <x,y,z>*|28/09/2024|11/10/2024||Programada|
-|4|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Diagrama de classes dos Item(ns) do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Projeto de persistência dos itens do backlog <x,y,z>|12/10/2024|25/10/2024||Programada|
-|4|Implementação dos itens do backlog <x,y,z>*|12/10/2024|25/10/2024||Programada|
-|5|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Diagrama de classes dos Item(ns) do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Projeto de persistência dos itens do backlog <x,y,z>|26/10/2024|08/11/2024||Programada|
-|5|Implementação dos itens do backlog <x,y,z>*|26/10/2024|08/11/2024||Programada|
-|6|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Diagrama de classes dos Item(ns) do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Projeto de persistência dos itens do backlog <x,y,z>|09/11/2024|22/11/2024||Programada|
-|6|Implementação dos itens do backlog <x,y,z>*|09/11/2024|22/11/2024||Programada|
-|7|Especificação de estórias de usuários dos Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Diagrama de classes dos Item(ns) do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Diagrama de interação/sequencia dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Projeto de Interfaces gráficas dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Projeto de persistência dos itens do backlog <x,y,z>|23/11/2024|06/12/2024||Programada|
-|7|Implementação dos itens do backlog <x,y,z>*|23/11/2024|06/12/2024||Programada|
-|8|Apresentação do Projeto|07/12/2024|20/12/2024|Grupo|Programada|
+|Descrição|Data Início|Data Fim|Responsável|Situação|
+|---|---|---|---|---|
+|Concepção|30/08/2024|13/09/2024|Grupo|Concluída|
+|Preparação|14/09/2024|27/09/2024|Grupo|Conluída|
+|Design e Planejamento Inicial, definição dos diagramas e Histórias de Usuário|28/09/2024|10/10/2024|Grupo|Concluída|
+|Histórias de Usuário|28/09/2024|08/10/2024|Grupo|Concluída|
+|Construção dos diagramas de classe, sequência, atividades e classes de análise|11/10/2024|11/11/2024|Grupo|Parcialmente concluída|
+|Construção do Diagrama C4 Model|20/11/2024|11/12/2024|Grupo|Em andamento|
+|Design de interfaces no Figma |27/11/2024|12/12/2024|Grupo|Em andamento|
+|Apresentação do Projeto|13/12/2024|13/12/2024|Grupo|Programada|
 
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
