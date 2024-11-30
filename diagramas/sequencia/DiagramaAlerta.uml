@@ -1,0 +1,11 @@
+@startuml
+actor Profissional_de_Saude
+boundary TelaAlerta
+participant "relatorio : Report" as Report
+participant "alerta : Alert" as Alert
+
+Report -> Report : 1 Detectar grande número de novos casos
+Report -> Alert : 2 createAlert() - Criar alerta de incidência
+Alert -> TelaAlerta : 3 Exibir novo alerta
+TelaAlerta -> Profissional_de_Saude : 4 Notificar sobre novo alerta
+@enduml

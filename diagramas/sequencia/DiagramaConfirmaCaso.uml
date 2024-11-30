@@ -1,0 +1,15 @@
+ @startuml
+actor Profissional_de_Saude
+boundary TelaCasoDengue
+participant "casoDengue : DengueCase" as DengueCase
+participant "Status : Status" as Status
+participant "relatorio : Report" as Report
+participant CamadaMapeadora
+
+Profissional_de_Saude -> TelaCasoDengue : 1 Acessar caso de dengue
+TelaCasoDengue -> DengueCase : 2 Atualizar status (confirmado, descartado, recuperado)
+DengueCase -> Status : 3 Definir novo status
+DengueCase -> CamadaMapeadora : 4 ataulizar banco de dados
+DengueCase -> Report : 5 generateReport() (Opcional)
+Profissional_de_Saude <-- TelaCasoDengue : 6 Status atualizado
+@enduml

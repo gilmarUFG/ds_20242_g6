@@ -37,9 +37,9 @@ Este projeto será desenvolvido pelos componentes do grupo 6:
 
 |Matrícula|Nome|Usuário Git|
 |---|---|---|
-|202201690|FREDERICO GARCEZ RODRIGUES|[Frederico03](https://github.com/Frederico03)|
+|202201690|FREDERICO GARCEZ RODRIGUES|[<usuario_github>](https://github.com/<usuario_github>)|
 |202201693|HUGO MORENO I VEIGA JARDIM|[hugojardim](https://github.com/hugojardim)|
-|202105042|KELVIN DE OLIVEIRA|[Kelvin-de-Oliveira](https://github.com/Kelvin-de-Oliveira)|
+|202105042|KELVIN DE OLIVEIRA|[<usuario_github>](https://github.com/<usuario_github>)|
 |202201718|VITOR PAULO ETERNO GODOI|[akzvitor](https://github.com/akzvitor)|
 |202405056|WENDEL MÁRCIO DE OLIVEIRA FILHO|[Wendel-Fl](https://github.com/Wendel-Fl)|
 
