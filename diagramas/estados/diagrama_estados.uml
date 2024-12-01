@@ -1,0 +1,68 @@
+@startuml
+
+skinparam backgroundColor white
+skinparam ActivityBorderColor black
+skinparam ActivityBackgroundColor #f0f0f0
+
+partition "População em Geral" {
+  start
+  :Acessa o Sistema;
+  if (Buscar informações?) then
+    :Consulta informações sobre dengue;
+    :Recebe material educativo e dicas de prevenção;
+    stop
+  else
+    :Inicia Reporte de Sintomas;
+    :Preenche formulário de triagem;
+    if (Sintomas compatíveis?) then
+      :Recebe orientações iniciais;
+      :Encaminhamento para unidade de saúde;
+    else
+      :Recebe recomendações preventivas;
+      stop
+    endif
+  endif
+}
+
+partition "Profissionais de Saúde" {
+  start
+  :Realiza triagem inicial;
+  :Coleta histórico do paciente;
+  if (Suspeita de dengue?) then
+    :Solicita exames específicos;
+    if (Diagnóstico confirmado?) then
+      :Classifica gravidade do caso;
+      :Define protocolo de tratamento;
+      :Registra caso no sistema;
+      ->[dados] :Notifica vigilância epidemiológica;
+    else
+      :Investiga outras patologias;
+      stop
+    endif
+  else
+    :Fornece orientações gerais;
+    stop
+  endif
+}
+
+partition "Gestão de Saúde Pública" {
+  start
+  :Monitora dados epidemiológicos;
+  :Analisa distribuição geográfica;
+  if (Aumento significativo de casos?) then
+    :Avalia indicadores de risco;
+    if (Situação crítica?) then
+      :Declara estado de emergência;
+      :Mobiliza recursos extras;
+    else
+      :Intensifica ações preventivas;
+    endif
+    :Emite boletim epidemiológico;
+  else
+    :Mantém vigilância de rotina;
+  endif
+  :Atualiza plano de contingência;
+  stop
+}
+
+@enduml
