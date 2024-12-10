@@ -1,5 +1,4 @@
 @startuml
-
 enum Papel {
      USUARIO,
      PROFISSIONAL_SAUDE,
@@ -86,10 +85,11 @@ class Alerta {
 Usuario -left-- Papel
 
 Contato -right--* Pessoa
-Usuario -down-* Pessoa
 Endereco -left--* Pessoa
-Relatorio "1" -up-- "1" Pessoa
-CasoDengue "*" -up-- "1" Pessoa
+
+Pessoa --* Usuario
+Relatorio "1" -up-- "1" Usuario
+CasoDengue "*" -up-- "1" Usuario
 
 Endereco -down--* CasoDengue
 Relatorio "*" -right-- "1" CasoDengue
@@ -97,5 +97,4 @@ Status -up-- CasoDengue
 Sintoma -left-- CasoDengue
 
 Relatorio "1" --- "*" Alerta
-
 @enduml
