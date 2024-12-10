@@ -1,0 +1,105 @@
+@startuml
+
+enum Papel {
+     USUARIO
+     PROFISSIONALSAUDE
+     AUTORIDADESAUDE
+     ADMIN
+}
+
+enum Status {
+    SUSPEITA
+    CONFIRMADO
+    DESCARTADO
+    RECUPERADO
+}
+
+enum Sintoma {
+    FEBREALTA,
+    DORDECABECASEVERA,
+    DORNASARTICULACOES,
+    DORMUSCULAR,
+    DORABDOMINAL,
+    FATIGA,
+    NAUSEAS,
+    VOMITOS,
+    MANCHASVERMELHAS,
+    SANGRAMENTOLEVE
+}
+
+class Endereco {
+    - id : Integer
+    - rua : String
+    - numero : Integer
+    - bairro : String
+    - cidade : String
+    - estado : String
+    - cep : String
+}
+
+class Usuario {
+    - id : Integer
+    - pessoa : Pessoa
+    - papel : Papel
+    - nomeUsuario : String
+    - email : String
+    - senha : String
+}
+
+class Pessoa {
+     - id : Integer
+     - nome : String
+     - cpf : String
+     - endereco : Endereco
+     - contato[] : Contato
+     + void notificarCasoDengue()
+}
+
+class Contato {
+    - id : Integer
+    - email[] : String
+    - telefone[] : String
+}
+
+class CasoDengue {
+    - id : Integer
+    - status : Status
+    - sintomas[] : Sintoma
+    - dataNotificacao : Date
+    - dataConfirmacao : Date
+    - localDengue : Endereco
+    - pessoa : Pessoa
+    + Relatorio gerarRelatorio()
+}
+
+class Relatorio {
+    - id : Integer
+    - dataGeracao : Date
+    - pessoa : Pessoa
+    - casosDengue[] : CasoDengue
+    + Alerta gerarAlerta()
+}
+
+class Alerta {
+    - id : Integer
+    - localDengue : Endereco
+    - incidenciaDengue : Integer
+}
+
+
+Usuario -left-- Papel
+
+Contato -right--* Pessoa
+Usuario -down-* Pessoa
+Endereco -left--* Pessoa
+Relatorio "1" -up-- "1" Pessoa
+CasoDengue "*" -up-- "1" Pessoa
+
+Endereco -down--* CasoDengue
+Relatorio "*" -right-- "1" CasoDengue
+Status -up-- CasoDengue
+Sintoma -left-- CasoDengue
+
+Relatorio "1" --- "*" Alerta
+
+@enduml
