@@ -1,30 +1,29 @@
 @startuml
 
 enum Papel {
-     USUARIO
-     PROFISSIONALSAUDE
-     AUTORIDADESAUDE
+     USUARIO,
+     PROFISSIONAL_SAUDE,
+     AUTORIDADE_SAUDE,
      ADMIN
 }
 
 enum Status {
-    SUSPEITA
-    CONFIRMADO
-    DESCARTADO
-    RECUPERADO
+    NAO_CONFIRMADO,
+    CONFIRMADO,
+    SOB_INVESTIGACAO
 }
 
 enum Sintoma {
-    FEBREALTA,
-    DORDECABECASEVERA,
-    DORNASARTICULACOES,
-    DORMUSCULAR,
-    DORABDOMINAL,
+    FEBRE_ALTA,
+    DOR_DE_CABECA_SEVERA,
+    DOR_ARTICULACOES,
+    DOR_MUSCULAR,
+    DOR_ABDOMINAL,
     FATIGA,
     NAUSEAS,
     VOMITOS,
-    MANCHASVERMELHAS,
-    SANGRAMENTOLEVE
+    MANCHAS_VERMELHAS,
+    SANGRAMENTO_LEVE
 }
 
 class Endereco {
@@ -52,7 +51,6 @@ class Pessoa {
      - cpf : String
      - endereco : Endereco
      - contato[] : Contato
-     + void notificarCasoDengue()
 }
 
 class Contato {
@@ -69,7 +67,7 @@ class CasoDengue {
     - dataConfirmacao : Date
     - localDengue : Endereco
     - pessoa : Pessoa
-    + Relatorio gerarRelatorio()
+    + void alterarStatus()
 }
 
 class Relatorio {
@@ -77,12 +75,10 @@ class Relatorio {
     - dataGeracao : Date
     - pessoa : Pessoa
     - casosDengue[] : CasoDengue
-    + Alerta gerarAlerta()
 }
 
 class Alerta {
     - id : Integer
-    - localDengue : Endereco
     - incidenciaDengue : Integer
 }
 
