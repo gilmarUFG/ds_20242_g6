@@ -117,9 +117,9 @@ O nosso planejamento inicial é hospedar a aplicação back-end no [Heroku](http
 |Preparação|14/09/2024|27/09/2024|Grupo|Conluída|
 |Design e Planejamento Inicial, definição dos diagramas e Histórias de Usuário|28/09/2024|10/10/2024|Grupo|Concluída|
 |Histórias de Usuário|28/09/2024|08/10/2024|Grupo|Concluída|
-|Construção dos diagramas de classe, sequência, atividades e classes de análise|11/10/2024|11/11/2024|Grupo|Parcialmente concluída|
-|Construção do Diagrama C4 Model|20/11/2024|11/12/2024|Grupo|Em andamento|
-|Design de interfaces no Figma |27/11/2024|12/12/2024|Grupo|Em andamento|
+|Construção dos diagramas de classe, sequência, atividades e classes de análise|11/10/2024|11/11/2024|Grupo|Concluída|
+|Construção do Diagrama C4 Model|20/11/2024|11/12/2024|Grupo|Concluída|
+|Design de interfaces no Figma |27/11/2024|12/12/2024|Grupo|Concluída|
 |Apresentação do Projeto|13/12/2024|13/12/2024|Grupo|Programada|
 
 * Implementação se aplicará, se os itens da iteração em andamento, forem eleitos para validação do projeto do trabalho.
