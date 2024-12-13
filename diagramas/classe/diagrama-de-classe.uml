@@ -1,0 +1,74 @@
+@startuml
+class Populacao {
+  id: int
+  nome: string
+  idade: int
+  endereco: string
+  telefone: string
+  reportarSintomas(sintomas: string, localizacao: string): CasoDengue
+  acessarInformacoes(): string
+}
+
+class PostoSaude {
+  id: int
+  nome: string
+  localizacao: string
+  notificarCaso(caso: CasoDengue): void
+  enviarDadosAtendimento(): void
+}
+
+class CasoDengue {
+  id: int
+  sintomas: string
+  localizacao: string
+  status: string
+  dataRegistro: Date
+  atualizarStatus(novoStatus: string): void
+}
+
+class Aplicativo {
+  id: int
+  versao: string
+  enviarReport(caso: CasoDengue): void
+  exibirInformacoes(): string
+}
+
+class AutoridadeSaude {
+  id: int
+  nome: string
+  cargo: string
+  areaAtuacao: string
+  analisarDados(): RelatorioDengue
+  intervirAreaRisco(areas: string[]): void
+}
+
+class RelatorioDengue {
+  id: int
+  periodo: string
+  dadosIncidencia: string
+  areasRisco: List<string>
+  gerarRelatorioDetalhado(): string
+}
+
+class SistemaMonitoramento {
+  id: int
+  dadosColetados: List<CasoDengue>
+  receberDados(caso: CasoDengue): void
+  gerarRelatorio(): RelatorioDengue
+}
+
+class Notificacao {
+  id: int
+  mensagem: string
+  destinatario: string
+  enviar(): void
+}
+
+Populacao "1" -- "0..*" CasoDengue
+PostoSaude "1" -- "0..*" CasoDengue
+SistemaMonitoramento "1" -- "0..*" CasoDengue
+SistemaMonitoramento "1" -- "0..*" RelatorioDengue
+RelatorioDengue "0..*" -- "0..*" AutoridadeSaude
+Notificacao "0..*" -- "1" SistemaMonitoramento
+Aplicativo "0..*" -- "1" CasoDengue
+@enduml

@@ -1,15 +1,25 @@
- @startuml
-actor Profissional_de_Saude
-boundary TelaCasoDengue
-participant "casoDengue : DengueCase" as DengueCase
-participant "Status : Status" as Status
-participant "relatorio : Report" as Report
-participant CamadaMapeadora
+@startuml
+actor Profissional_Saude
+boundary AppMobile
+participant "API Gateway" as Api
+participant "Autenticação MicroService" as aut
+participant "controller: CasesController" as controller
+participant "service: CasesService" as service
+participant "repository: CasesRepo" as repo
+database "CasesDataBase" as bd
 
-Profissional_de_Saude -> TelaCasoDengue : 1 Acessar caso de dengue
-TelaCasoDengue -> DengueCase : 2 Atualizar status (confirmado, descartado, recuperado)
-DengueCase -> Status : 3 Definir novo status
-DengueCase -> CamadaMapeadora : 4 ataulizar banco de dados
-DengueCase -> Report : 5 generateReport() (Opcional)
-Profissional_de_Saude <-- TelaCasoDengue : 6 Status atualizado
+Usuário -> AppMobile : 1. Solicitar confirmar caso suspeito
+AppMobile -> Api: 2. confirmCaseStatus()
+Api -> aut: 3. Requisição HTTP(validar autenticação do usuário)
+aut -> Api: 3.1 Status autenticação 
+Api -> controller: 4. updateCaseStatus()
+controller -> service: 5 confirmCase()
+service -> repo: 6. updateStatus()
+repo -> bd: 7. changeCaseStatus()
+bd -> repo: 8. statusUpdated()
+repo -> service: 9. caseStatusUpdated()
+service -> controller: 10. caseConfirmed()
+controller -> Api: 11. sendUpdateConfirmation()
+Api -> AppMobile: 12. notifyCaseConfirmation()
+AppMobile -> Profissional_Saude: 13. Exibe uma mensagem informando que caso foi confirmado com sucesso
 @enduml

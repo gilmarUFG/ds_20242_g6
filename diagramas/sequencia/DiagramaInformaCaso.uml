@@ -1,18 +1,24 @@
 @startuml
-actor Usuario_comum
-boundary TelaReporte
-participant "persona : Persona" as Persona
-participant "casoDengue : DengueCase" as DengueCase
-participant "endereco : Address" as Address
-participant "relatorio : Report" as Report
-participant CamadaMapeadora
+actor Usuário
+boundary AppMobile
+participant "API Gateway" as Api
+participant "Autenticação MicroService" as aut
+participant "controller: CasesController" as controller
+participant "service: CasesService" as service
+participant "repository: CasesRepo" as repo
+database "CasesDataBase" as bd
 
-Usuario_comum -> TelaReporte : 1 Registrar novo caso de dengue
-TelaReporte -> Persona: 2 reportDengueCases()
-Persona -> DengueCase : 3 Criar novo DengueCase
-DengueCase -> Address : 4 Associar endereço ao caso
-DengueCase -> Report : 5 (Opcional) generateReport()
-DengueCase -> CamadaMapeadora : 6 Salvar caso de dengue no banco de dados
-CamadaMapeadora -> DengueCase : 7 Confirmação de salvamento
-Usuario_comum <-- Persona : Confirmação de registro
+Usuário -> AppMobile : 1. Solicita registrar um novo  caso
+AppMobile -> Api: 2. submitCase()
+Api -> aut: 3. Requisição HTTP(validar autenticação do usuário)
+aut -> Api: 3.1 Status autenticação 
+Api -> controller: 4. processCaseSubmission()
+controller -> service: 5 saveCase()
+service -> repo: 6. insertCase()
+repo -> bd: 7. confirmInsertion()
+repo -> service: 8. caseSaved()
+service -> controller: 9. caseCreated()
+controller -> Api: 10. sendConfirmation()
+Api -> AppMobile: 12. notifyUser()
+AppMobile -> Usuário: 13. Informa o usuário que o caso foi registrado com sucesso
 @enduml
