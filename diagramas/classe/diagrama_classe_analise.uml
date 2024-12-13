@@ -93,8 +93,8 @@ CasoDengue "*" -up-- "1" Usuario
 
 Endereco -down--* CasoDengue
 Relatorio "*" -right-- "1" CasoDengue
-Status -up-- CasoDengue
+Status -up- CasoDengue
 Sintoma -left-- CasoDengue
 
-Relatorio "1" --- "*" Alerta
+Relatorio "1" -- "*" Alerta
 @enduml
