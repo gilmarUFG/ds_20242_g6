@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Página-1" id="72w8gyONWri6qv1IQKfh">
-    <mxGraphModel dx="3783" dy="2520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1527" dy="1428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -18,12 +18,12 @@
             <mxGeometry x="722.8260869565219" y="110" width="240" height="120" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Case Service" c4Type="Component" c4Technology="Spring Bean" c4Description="Permite que os administradores acessem dados &#xa;pessoas e preferências dos usuários" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="k0iF4_KkrRQ9H8Pkwpsn-2">
+        <object placeholders="1" c4Name="Case Service" c4Type="Component" c4Technology="Spring Bean" c4Description="Fornece métodos dispor informações sobre a dengue, além de confirmar ou não casos reportados de dengue" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="k0iF4_KkrRQ9H8Pkwpsn-2">
           <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Dz6mXpDx_hXOHsCZPw8R-20">
             <mxGeometry x="403.26086956521743" y="110" width="240" height="120" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Case Controller" c4Type="Component" c4Technology="Spring MVC Rest Controller" c4Description="Permite que os administradores acessem dados &#xa;pessoas e preferências dos usuários" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="k0iF4_KkrRQ9H8Pkwpsn-1">
+        <object placeholders="1" c4Name="Case Controller" c4Type="Component" c4Technology="Spring MVC Rest Controller" c4Description="Permite que os usuários acessem informações referentes aos casos de dengue" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="k0iF4_KkrRQ9H8Pkwpsn-1">
           <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="Dz6mXpDx_hXOHsCZPw8R-20">
             <mxGeometry x="83.69565217391303" y="110" width="240" height="120" as="geometry" />
           </mxCell>
@@ -41,7 +41,7 @@
         </mxCell>
         <mxCell id="k0iF4_KkrRQ9H8Pkwpsn-7" value="Utiliza" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k0iF4_KkrRQ9H8Pkwpsn-6">
           <mxGeometry x="0.168" y="-1" relative="1" as="geometry">
-            <mxPoint x="-23" y="-1" as="offset" />
+            <mxPoint x="-10" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Dz6mXpDx_hXOHsCZPw8R-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Dz6mXpDx_hXOHsCZPw8R-3" target="k0iF4_KkrRQ9H8Pkwpsn-1" edge="1">
@@ -62,11 +62,15 @@
         <mxCell id="Dz6mXpDx_hXOHsCZPw8R-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;dashed=1;dashPattern=8 8;exitX=0.535;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="k0iF4_KkrRQ9H8Pkwpsn-2" target="Dz6mXpDx_hXOHsCZPw8R-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="165" y="-430" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="32" y="-350" />
+              <mxPoint x="-125" y="-350" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Dz6mXpDx_hXOHsCZPw8R-8" value="Utiliza o Container&amp;nbsp;&lt;div&gt;de Autenticação para&lt;/div&gt;&lt;div&gt;validar acessos&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Dz6mXpDx_hXOHsCZPw8R-7" vertex="1" connectable="0">
           <mxGeometry x="-0.0688" y="-1" relative="1" as="geometry">
-            <mxPoint x="1" as="offset" />
+            <mxPoint x="-17" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Dz6mXpDx_hXOHsCZPw8R-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="k0iF4_KkrRQ9H8Pkwpsn-2" target="Dz6mXpDx_hXOHsCZPw8R-23" edge="1">
