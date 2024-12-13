@@ -1,14 +1,25 @@
 @startuml
-actor Administrador
-boundary TelaRelatorio
-participant "persona : Persona" as Persona
-participant "relatorio : Report" as Report
-participant CamadaControladora
+actor Usuário
+boundary AppMobile
+participant "API Gateway" as Api
+participant "Autenticação MicroService" as aut
+participant "controller: AnaliseController" as controller
+participant "service: ReportService" as service
+participant "repository: AnaliseRepo" as repo
+database "AnaliseDataBase" as bd
 
-Administrador -> TelaRelatorio : 1 Solicitar geração de relatório
-TelaRelatorio -> Persona : 2 generateReport()
-Persona -> Report : 3 Criar novo Report
-Report -> CamadaControladora : 4 Levantar dados (camada ira se comunicar com BD para consultas)
-CamadaControladora --> Report : 5 Resultado dos dados de relatório
-Administrador <-- Report : 6 Retorna relatório gerado
+Usuário -> AppMobile : 1. Solicita relatório
+AppMobile -> Api: 2. requestReport()
+Api -> aut: 3. Requisição HTTP(validar autenticação do usuário)
+aut -> Api: 3.1 Status autenticação 
+Api -> controller: 4. handleRequest()
+controller -> service: 5 creatReport()
+service -> repo: 6. fetchData()
+repo -> bd: 7. queryDatabase()
+bd -> repo: 8. returnData()
+repo -> service: 9. provideData()
+service -> controller: 10. returnReport()
+controller -> Api: 11. sendResponse()
+Api -> AppMobile: 12. deliverReport()
+AppMobile -> Usuário: 13. Disponibiliza a visualização dos dados
 @enduml

@@ -1,11 +1,28 @@
 @startuml
-actor Profissional_de_Saude
-boundary TelaAlerta
-participant "relatorio : Report" as Report
-participant "alerta : Alert" as Alert
 
-Report -> Report : 1 Detectar grande número de novos casos
-Report -> Alert : 2 createAlert() - Criar alerta de incidência
-Alert -> TelaAlerta : 3 Exibir novo alerta
-TelaAlerta -> Profissional_de_Saude : 4 Notificar sobre novo alerta
-@enduml
+entity "API Twillio" as exte
+boundary AppMobile
+participant "Notificações Microsservice" as notify
+participant "Alertas Microsservice" as alerta
+queue "FilaDeAlertas." as filaAlerta
+queue "FilaDeEventosDeCasos" as filaCasos
+participant "MessagesProducerAnalise" as producer
+participant "MessagesConsumerAnalise" as consumer
+participant "service: AnaliseService" as service
+participant "service: SpatialClusterService" as cluster
+participant "repository: AnaliseRepo" as repo
+
+filaCasos -> consumer: 1. Consome a fila de eventos de atualização em casos
+consumer -> service: 2. handleClusterData():
+service -> cluster: 3. executeClustering(): 
+cluster -> repo: 4. storeAnalyse()
+cluster -> service: 5. reportAlert()
+service -> producer: 6. notifyQueueAlert():
+producer -> filaAlerta: 7. Alimenta fila de Alertas
+filaAlerta -> alerta: 8. Encaminha a fila de alerta
+alerta -> notify: 9. sendAlert(UserData)
+notify -> AppMobile: 10. notifyUser
+notify -> exte: 11. SendEmamilAndSms()
+
+
+@enduml 
